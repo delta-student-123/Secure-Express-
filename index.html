@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SECURE EXPRESS INDIA PVT LTD - Courier & Air Logistic Services with Technical Support to Continue Operations as Essential Services.">
+  <title>SECURE EXPRESS INDIA PVT LTD | Secure &amp; Be Assured</title>
+
+  <!-- Typography & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Top Notification Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <div class="top-info-item"><i class="fas fa-phone-alt"></i> <span>+91 33 22737905 / +91 033 32573999</span></div>
+        <div class="top-info-item"><i class="fas fa-envelope"></i> <span>smandelia@secureexp.com</span></div>
+        <div class="top-info-item"><i class="fas fa-clock"></i> <span>Mon - Sat: 9:00 AM - 7:00 PM</span></div>
+      </div>
+      <div class="top-links">
+        <a href="#track"><i class="fas fa-search-location"></i> Track Shipment</a>
+        <a href="about.html"><i class="fas fa-user-tie"></i> Careers</a>
+        <a href="contact.html"><i class="fas fa-headset"></i> Support</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo/logo.png" alt="SECURE EXPRESS INDIA PVT LTD Logo">
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+          <div class="dropdown-menu">
+            <a href="express-delivery.html" class="dropdown-item">Express Delivery</a>
+            <a href="domestic-delivery.html" class="dropdown-item">Domestic Courier</a>
+            <a href="surface-delivery.html" class="dropdown-item">Surface Cargo</a>
+            <a href="air-delivery.html" class="dropdown-item">Air Cargo Delivery</a>
+            <a href="ecommerce-delivery.html" class="dropdown-item">E-Commerce Fulfillment</a>
+            <a href="b2b-delivery.html" class="dropdown-item">B2B Delivery</a>
+          </div>
+        </div>
+
+        <a href="#track" class="nav-link">Track</a>
+        <a href="#calculator" class="nav-link">Rate Calculator</a>
+        <a href="partners.html" class="nav-link">Partner With Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="contact.html" class="btn btn-accent"><i class="fas fa-box-open"></i> Book Now <i class="fas fa-arrow-right" style="font-size:0.8rem;"></i></a>
+        <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="sub-badge"><i class="fas fa-shield-alt"></i> SECURE &amp; BE ASSURED</div>
+          <h1 class="hero-title">
+            SECURE EXPRESS INDIA PVT LTD <span>Courier &amp; Air Logistic Services</span> with Technical Support to Continue Operations
+          </h1>
+          <p class="hero-desc">
+            Fast, reliable and secure courier &amp; logistics solutions across India with end-to-end tracking and dedicated support.
+          </p>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#track" class="btn btn-primary"><i class="fas fa-location-arrow"></i> Track Your Shipment <i class="fas fa-arrow-right"></i></a>
+            <a href="#calculator" class="btn btn-outline"><i class="fas fa-calculator"></i> Calculate Rate <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Right Hero Graphics Composition -->
+        <div style="position:relative; text-align:center;">
+          <div style="background:radial-gradient(circle, rgba(0,168,240,0.15) 0%, rgba(255,255,255,0) 70%); border-radius:50%; padding:0.5rem;">
+            <img src="images/hero_truck_plane.png" alt="SECURE EXPRESS Freight &amp; Logistics" style="max-height:440px; width:auto; margin:0 auto; mix-blend-mode:multiply; filter:drop-shadow(0 15px 30px rgba(0,114,206,0.18));">
+          </div>
+        </div>
+      </div>
+
+      <!-- FULL WIDTH HERO FEATURES BAR -->
+      <div class="hero-features-bar">
+        <div class="hero-feat-item"><i class="fas fa-bolt"></i> <div><strong>Fast Delivery</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">On-time, every time</span></div></div>
+        <div class="hero-feat-item"><i class="fas fa-shield-virus"></i> <div><strong>Secure Handling</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Safety is our priority</span></div></div>
+        <div class="hero-feat-item"><i class="fas fa-map-marked-alt"></i> <div><strong>Wide Network</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">Pan-India Coverage</span></div></div>
+        <div class="hero-feat-item"><i class="fas fa-headset"></i> <div><strong>24/7 Support</strong><br><span style="font-size:0.8rem; color:var(--text-muted);">We are here 24/7</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. DUAL MODULE SECTION: TRACK YOUR SHIPMENT + SHIPPING CALCULATOR
+       ========================================================================== -->
+  <section class="section" id="track" style="padding-top:1.5rem;">
+    <div class="container">
+      <div class="dual-module-grid">
+        
+        <!-- Track Card Left -->
+        <div class="track-module-card">
+          <div>
+            <div class="sub-badge" style="background:rgba(255,255,255,0.1); color:var(--primary-cyan); border-color:rgba(0,168,240,0.3); margin-bottom:0.4rem; padding:0.25rem 0.75rem; font-size:0.7rem;"><i class="fas fa-search-location"></i> CONSIGNMENT TRACKER</div>
+            <h3 style="font-family:var(--font-heading); font-size:1.45rem; font-weight:800; color:#FFF; margin-bottom:0.25rem;">TRACK YOUR SHIPMENT</h3>
+            <p style="font-size:0.85rem; color:rgba(255,255,255,0.75);">Enter your tracking number to get real-time updates</p>
+
+            <div class="track-input-wrap">
+              <input type="text" id="trackingInput" placeholder="Enter Tracking ID / AWB Number" value="SE100982345">
+              <button class="btn btn-accent" id="trackBtn" style="border-radius:var(--radius); padding:0.6rem 1.25rem; font-size:0.88rem;"><i class="fas fa-search"></i> Track Now</button>
+            </div>
+          </div>
+
+          <div class="track-process-steps">
+            <div class="t-step"><i class="fas fa-file-alt"></i><span>Booked</span></div>
+            <div class="t-step"><i class="fas fa-truck"></i><span>In Transit</span></div>
+            <div class="t-step"><i class="fas fa-shipping-fast"></i><span>Out For Delivery</span></div>
+            <div class="t-step"><i class="fas fa-box-check"></i><span>Delivered</span></div>
+          </div>
+        </div>
+
+        <!-- Shipping Calculator Card Right -->
+        <div class="calc-module-card">
+          <div>
+            <div class="sub-badge" style="margin-bottom:0.4rem; padding:0.25rem 0.75rem; font-size:0.7rem;"><i class="fas fa-calculator"></i> FREIGHT ESTIMATOR</div>
+            <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.25rem;">SHIPPING RATE CALCULATOR</h3>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin-bottom:0.85rem;">Get instant shipping rates for your shipment</p>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.65rem; margin-bottom:0.65rem;">
+              <div>
+                <label style="font-size:0.75rem; font-weight:700; color:var(--navy-deep);">From</label>
+                <input type="text" id="calcOrigin" value="700007" placeholder="Enter Pincode" style="width:100%; background:var(--bg-light); border:1px solid var(--border-light); padding:0.5rem 0.75rem; border-radius:6px; font-size:0.85rem; color:#000;">
+              </div>
+              <div>
+                <label style="font-size:0.75rem; font-weight:700; color:var(--navy-deep);">To</label>
+                <input type="text" id="calcDest" value="110001" placeholder="Enter Pincode" style="width:100%; background:var(--bg-light); border:1px solid var(--border-light); padding:0.5rem 0.75rem; border-radius:6px; font-size:0.85rem; color:#000;">
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.65rem; margin-bottom:0.85rem;">
+              <div>
+                <label style="font-size:0.75rem; font-weight:700; color:var(--navy-deep);">Weight (kg)</label>
+                <input type="number" id="calcWeight" value="0.5" step="0.5" style="width:100%; background:var(--bg-light); border:1px solid var(--border-light); padding:0.5rem 0.75rem; border-radius:6px; font-size:0.85rem; color:#000;">
+              </div>
+              <div>
+                <label style="font-size:0.75rem; font-weight:700; color:var(--navy-deep);">Shipment Type</label>
+                <select id="calcMode" style="width:100%; background:var(--bg-light); border:1px solid var(--border-light); padding:0.5rem 0.75rem; border-radius:6px; font-size:0.85rem; color:#000;">
+                  <option value="express">Express Air</option>
+                  <option value="surface">Surface Cargo</option>
+                  <option value="air">Air Cargo</option>
+                  <option value="ecommerce">E-Commerce</option>
+                  <option value="b2b">B2B Delivery</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" id="calcBtn" style="width:100%; padding:0.6rem 1rem; font-size:0.88rem;"><i class="fas fa-calculator"></i> Calculate Rate <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <!-- Price Summary Widget -->
+          <div class="calc-price-box" id="calculator">
+            <div style="font-size:0.72rem; opacity:0.85; text-transform:uppercase; font-weight:700;">Estimated Shipping Rate</div>
+            <div class="calc-price-num" id="resGrandTotal">₹218</div>
+            <div style="font-size:0.72rem; opacity:0.8; margin-bottom:0.75rem;">for this shipment</div>
+            
+            <div style="display:flex; flex-direction:column; gap:0.35rem; font-size:0.75rem; text-align:left; border-top:1px solid rgba(255,255,255,0.15); padding-top:0.6rem;">
+              <div style="display:flex; justify-content:space-between;"><span>Base Charge:</span><strong id="resBaseFreight">₹150</strong></div>
+              <div style="display:flex; justify-content:space-between;"><span>Fuel Surcharge:</span><strong id="resFuelSurcharge">₹20</strong></div>
+              <div style="display:flex; justify-content:space-between;"><span>Tax (18%):</span><strong id="resGst">₹48</strong></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. OUR COURIER & LOGISTICS SERVICES
+       ========================================================================== -->
+  <section class="section" id="services" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <div class="sub-badge"><i class="fas fa-cubes"></i> OUR SERVICES</div>
+        <h2 class="section-title">Our Courier &amp; Logistics Services</h2>
+        <p class="section-subtitle">Tailored logistics solutions for businesses and individuals with speed, safety and reliability.</p>
+      </div>
+
+      <!-- Worldwide Courier & Air Logistics Introduction Block -->
+      <div class="services-intro-card" style="background: linear-gradient(135deg, #F4F8FC 0%, #E6EFF8 100%); border: 1px solid var(--border-light); border-left: 4px solid var(--primary-blue); border-radius: var(--radius-lg); padding: 1.35rem 1.75rem; margin-bottom: 2rem;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 0.5rem; display:flex; align-items:center; gap:0.5rem;">
+          <i class="fas fa-globe-asia" style="color:var(--primary-blue);"></i> Worldwide Courier &amp; Air Logistics
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-main); line-height: 1.65; margin-bottom: 0.75rem;">
+          It gives us immense pleasure to introduce ourselves as a leading Courier &amp; Air Logistics Service Company in the name and style of <strong>SECURE EXPRESS INDIA PRIVATE LIMITED</strong> having registered office at Kolkata &amp; Corporate offices in Mumbai with an objective <strong>"SECURE &amp; BE ASSURED"</strong>.
+        </p>
+        <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.65; margin: 0;">
+          We are serving almost in all important cities of India &amp; abroad with a network of more than <strong>588 Centres</strong>. Apart from that our Call Centres are also well-equipped to listen and understand the needs and to responds with solution that works instantly, so as to achieve <em>"Excellence in Service and Quality Services"</em>.
+        </p>
+      </div>
+
+      <div class="services-grid-6">
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-truck-loading"></i></div>
+          <h4>Express Delivery</h4>
+          <p>Fast and time-definite express delivery across India.</p>
+          <a href="express-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h4>Domestic Delivery</h4>
+          <p>Reliable door-to-door delivery to every corner of India.</p>
+          <a href="domestic-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-ship"></i></div>
+          <h4>Surface Cargo</h4>
+          <p>Cost-effective surface transport for bulk shipments.</p>
+          <a href="surface-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-plane"></i></div>
+          <h4>Air Cargo Delivery</h4>
+          <p>Fast air cargo solutions for urgent and critical shipments.</p>
+          <a href="air-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-shopping-bag"></i></div>
+          <h4>E-Commerce Fulfillment</h4>
+          <p>End-to-end fulfillment solutions for online businesses.</p>
+          <a href="ecommerce-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card-clean">
+          <div class="s-icon"><i class="fas fa-city"></i></div>
+          <h4>B2B Delivery</h4>
+          <p>Smart logistics designed for businesses of all sizes.</p>
+          <a href="b2b-delivery.html">Explore Service <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. WHY CHOOSE SECURE EXPRESS
+       ========================================================================== -->
+  <section class="section" id="why-us" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <div class="sub-badge"><i class="fas fa-star"></i> WHY CHOOSE US</div>
+        <h2 class="section-title">Why Choose Secure Express</h2>
+        <p class="section-subtitle">We deliver more than parcels, we deliver trust.</p>
+      </div>
+
+      <div class="why-grid-4">
+        <div class="why-card-v">
+          <div class="w-icon"><i class="fas fa-bolt"></i></div>
+          <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.5rem;">Fast Delivery</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Timely deliveries with optimized routes and real-time tracking.</p>
+        </div>
+
+        <div class="why-card-v">
+          <div class="w-icon"><i class="fas fa-user-shield"></i></div>
+          <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.5rem;">Secure Handling</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Advanced security &amp; safe handling for every shipment.</p>
+        </div>
+
+        <div class="why-card-v">
+          <div class="w-icon"><i class="fas fa-globe"></i></div>
+          <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.5rem;">Wide Network</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted);">Extensive network across India for seamless connectivity.</p>
+        </div>
+
+        <div class="why-card-v">
+          <div class="w-icon"><i class="fas fa-receipt"></i></div>
+          <h3 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.5rem;">Transparent Pricing</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted);">No hidden charges, competitive rates and complete transparency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. HOW IT WORKS SECTION
+       ========================================================================== -->
+  <section class="section" id="how-it-works" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <div class="sub-badge"><i class="fas fa-route"></i> HOW IT WORKS</div>
+        <h2 class="section-title">How Secure Express Works</h2>
+        <p class="section-subtitle">Simple steps to ship your parcel safely &amp; securely.</p>
+      </div>
+
+      <div class="how-steps-5">
+        <div class="how-step-card">
+          <div class="how-step-num">1</div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-laptop-house"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">Book Shipment</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted);">Schedule a pickup or drop your parcel at nearest location.</p>
+        </div>
+
+        <div class="how-step-card">
+          <div class="how-step-num">2</div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-people-carry"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">Pickup</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted);">Our executive picks up your parcel smoothly from your location.</p>
+        </div>
+
+        <div class="how-step-card">
+          <div class="how-step-num">3</div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-truck-loading"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">In Transit</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted);">Your shipment moves safely through our network.</p>
+        </div>
+
+        <div class="how-step-card">
+          <div class="how-step-num">4</div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-shipping-fast"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">Out For Delivery</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted);">Parcel reaches your destination and goes out for delivery.</p>
+        </div>
+
+        <div class="how-step-card">
+          <div class="how-step-num">5</div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-box-check"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">Delivered</h4>
+          <p style="font-size:0.82rem; color:var(--text-muted);">Safe and on-time delivery to your doorstep.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. PAN INDIA COVERAGE + NUMBERS & STATISTICS DUAL SECTION
+       ========================================================================== -->
+  <section class="section" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="dual-stats-grid">
+        
+        <!-- Pan India Coverage Left Section -->
+        <div class="pan-india-card" style="display:flex; flex-direction:column; justify-content:space-between; height:100%; background:#FFFFFF; border:1px solid var(--border-light); border-radius:var(--radius-lg); padding:1.4rem 1.6rem; box-shadow:var(--shadow-sm);">
+          <div>
+            <div class="sub-badge" style="margin-bottom:0.4rem; padding:0.25rem 0.75rem; font-size:0.7rem;"><i class="fas fa-map-marked-alt"></i> DELIVERY NETWORK</div>
+            <h2 style="font-family:var(--font-heading); font-size:1.5rem; font-weight:900; color:var(--navy-deep); margin-bottom:0.35rem;">Pan India Coverage</h2>
+            <p style="color:var(--primary-blue); font-size:0.9rem; font-weight:700; margin-bottom:0.5rem; display:flex; align-items:center; gap:0.4rem;">
+              <i class="fas fa-shield-alt"></i> "SECURE &amp; BE ASSURED" Nationwide Reach
+            </p>
+            <p style="color:var(--text-muted); font-size:0.85rem; line-height:1.55; margin-bottom:0.85rem;">
+              Serving over <strong>20,000+ pin-codes</strong> through an extensive logistics network of <strong>588+ centres</strong> and <strong>4,182+ franchisee outlets</strong> across India.
+            </p>
+            <div style="display:flex; gap:1.25rem; font-size:0.8rem; color:var(--navy-deep); font-weight:600; margin-bottom:0.85rem; flex-wrap:wrap;">
+              <span><i class="fas fa-check-circle" style="color:var(--primary-cyan);"></i> Doorstep Pickup</span>
+              <span><i class="fas fa-check-circle" style="color:var(--primary-cyan);"></i> Live Web Tracking</span>
+              <span><i class="fas fa-check-circle" style="color:var(--primary-cyan);"></i> 100% Soft POD</span>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:0.5rem; text-align:center; padding-top:0.75rem; border-top:1px solid rgba(0,114,206,0.12);">
+            <div style="background:var(--bg-light); padding:0.5rem 0.35rem; border-radius:var(--radius); border:1px solid var(--border-light);">
+              <div style="font-family:var(--font-heading); font-size:1.3rem; font-weight:900; color:var(--primary-blue);">20,000+</div>
+              <div style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">Pin-Code Coverage</div>
+            </div>
+            <div style="background:var(--bg-light); padding:0.5rem 0.35rem; border-radius:var(--radius); border:1px solid var(--border-light);">
+              <div style="font-family:var(--font-heading); font-size:1.3rem; font-weight:900; color:var(--primary-blue);">588+</div>
+              <div style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">Distribution Centres</div>
+            </div>
+            <div style="background:var(--bg-light); padding:0.5rem 0.35rem; border-radius:var(--radius); border:1px solid var(--border-light);">
+              <div style="font-family:var(--font-heading); font-size:1.3rem; font-weight:900; color:var(--primary-blue);">4,182+</div>
+              <div style="font-size:0.7rem; color:var(--text-muted); font-weight:700;">Outlets &amp; Franchisees</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbers & Statistics Right Dark Card -->
+        <div class="stats-card-dark" style="display:flex; flex-direction:column; justify-content:space-between; height:100%;">
+          <div>
+            <div class="sub-badge" style="background:rgba(255,255,255,0.1); color:var(--primary-cyan); border-color:rgba(0,168,240,0.3); margin-bottom:0.35rem; padding:0.25rem 0.75rem; font-size:0.7rem;"><i class="fas fa-chart-line"></i> NUMBERS &amp; STATISTICS</div>
+            <h2 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:#FFF; margin-bottom:0.6rem;">Delivering Excellence Every Single Day</h2>
+          </div>
+
+          <div class="stats-4-grid">
+            <div class="s-box">
+              <div class="s-box-num">1999</div>
+              <div style="font-size:0.72rem; opacity:0.85; font-weight:600;">Year of Establishment</div>
+            </div>
+            <div class="s-box">
+              <div class="s-box-num">19,000+</div>
+              <div style="font-size:0.72rem; opacity:0.85; font-weight:600;">Pin-Codes Served</div>
+            </div>
+            <div class="s-box">
+              <div class="s-box-num">99.8%</div>
+              <div style="font-size:0.72rem; opacity:0.85; font-weight:600;">On-Time Delivery</div>
+            </div>
+            <div class="s-box">
+              <div class="s-box-num">24/7</div>
+              <div style="font-size:0.72rem; opacity:0.85; font-weight:600;">Customer Support</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CUSTOMER REVIEWS
+       ========================================================================== -->
+  <section class="section" id="reviews" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <div class="sub-badge"><i class="fas fa-comments"></i> WHAT OUR CUSTOMERS SAY</div>
+        <h2 class="section-title">Trusted by Thousands of Happy Customers</h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+        <div style="background:var(--bg-light); border:1px solid var(--border-light); padding:2.5rem; border-radius:var(--radius-lg);">
+          <div style="color:#F59E0B; margin-bottom:1rem; font-size:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:var(--navy-deep); font-size:1.05rem; line-height:1.7; margin-bottom:1.5rem;">
+            "Secure Express has been our trusted logistics partner. Their delivery speed and customer support are excellent."
+          </p>
+          <div style="font-weight:800; font-family:var(--font-heading); color:var(--navy-deep);">Amit Kapoor</div>
+          <div style="font-size:0.85rem; color:var(--text-muted);">Operations Manager</div>
+        </div>
+
+        <div style="background:var(--bg-light); border:1px solid var(--border-light); padding:2.5rem; border-radius:var(--radius-lg);">
+          <div style="color:#F59E0B; margin-bottom:1rem; font-size:1.1rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p style="font-style:italic; color:var(--navy-deep); font-size:1.05rem; line-height:1.7; margin-bottom:1.5rem;">
+            "Very reliable service with real-time tracking. Highly recommended for business shipments."
+          </p>
+          <div style="font-weight:800; font-family:var(--font-heading); color:var(--navy-deep);">Priya Mehta</div>
+          <div style="font-size:0.85rem; color:var(--text-muted);">E-Commerce Owner</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. FAQ SPLIT SECTION
+       ========================================================================== -->
+  <section class="section" id="faq" style="background: var(--bg-light);">
+    <div class="container">
+      <div class="faq-split-grid">
+        <div>
+          <div class="sub-badge"><i class="fas fa-question-circle"></i> FREQUENTLY ASKED QUESTIONS</div>
+          <h2 class="section-title" style="text-align:left; margin-bottom:2rem;">Quick Answers to Common Questions</h2>
+
+          <div class="faq-container">
+            <div class="faq-item active">
+              <div class="faq-header">
+                <span>How do I track my shipment?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-body">
+                Enter your Consignment Number / AWB or Customer Reference ID into our tracking widget above to get real-time milestone updates.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>What is the delivery time for different services?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-body">
+                Express Air delivers within 24-48 hours across major metros, while Surface Cargo takes 3-5 business days depending on distance.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>What if I am not available at the time of delivery?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-body">
+                Our delivery executive will re-attempt delivery on the next business day or coordinate via phone call/SMS.
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-header">
+                <span>Do you provide insurance for shipments?</span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <div class="faq-body">
+                Yes, transit risk insurance coverage is available for high-value corporate and commercial cargo upon booking request.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <img src="images/faq_support_staff.png" alt="Customer Support Officer" style="max-height:380px; margin:0 auto; mix-blend-mode:multiply; filter:drop-shadow(0 15px 25px rgba(0,114,206,0.2)); border-radius:var(--radius-lg);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. CTA BANNER
+       ========================================================================== -->
+  <section class="cta-banner-full" id="cta-banner">
+    <div class="container">
+      <div class="cta-content-center">
+        <div class="sub-badge" style="background:rgba(0,168,240,0.15); color:var(--primary-cyan); border-color:rgba(0,168,240,0.4); margin-bottom:1rem; display:inline-flex;"><i class="fas fa-bolt"></i> FAST &amp; SECURE LOGISTICS</div>
+        
+        <h2 style="font-family:var(--font-heading); font-size:2.5rem; font-weight:900; color:#FFF; line-height:1.25; margin-bottom:0.85rem;">
+          Ready to Experience <span style="color:var(--primary-cyan); text-shadow:0 0 25px rgba(0,168,240,0.5);">Secure &amp; Assured</span> Courier Logistics?
+        </h2>
+        
+        <p style="font-size:1.1rem; color:rgba(255,255,255,0.85); margin-bottom:1.5rem; max-width:720px; margin-left:auto; margin-right:auto;">
+          Ship with India's most trusted logistics partner today and experience seamless door-to-door delivery.
+        </p>
+
+        <div class="cta-trust-list-center">
+          <div class="cta-trust-item"><i class="fas fa-check-circle"></i> 20,000+ Pin-Codes</div>
+          <div class="cta-trust-item"><i class="fas fa-clock"></i> On-Time Guarantee</div>
+          <div class="cta-trust-item"><i class="fas fa-headset"></i> 24/7 Priority Support</div>
+          <div class="cta-trust-item"><i class="fas fa-shield-alt"></i> 100% Safe Handling</div>
+        </div>
+
+        <div style="display:flex; gap:1.25rem; justify-content:center; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-accent" style="box-shadow:0 10px 25px rgba(0,168,240,0.4); padding:0.85rem 2rem; font-size:1rem;"><i class="fas fa-box-open"></i> Book Shipment Now <i class="fas fa-arrow-right"></i></a>
+          <a href="contact.html" class="btn btn-outline" style="color:#FFF; border-color:rgba(255,255,255,0.35); background:rgba(255,255,255,0.05); padding:0.85rem 2rem; font-size:1rem;"><i class="fas fa-headset"></i> Get In Touch <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. 5-COLUMN FOOTER
+       ========================================================================== -->
+  <footer class="footer-5-col">
+    <div class="container">
+      <div class="footer-grid-5">
+        <div>
+          <img src="images/logo/logo.png" alt="SECURE EXPRESS Logo" class="footer-logo" style="margin-bottom:1.25rem; max-height:75px;">
+          <p style="font-size:0.88rem; line-height:1.7; margin-bottom:1.5rem;">
+            Secure Express India Pvt Ltd is a leading courier &amp; logistics company providing reliable, secure and fast delivery solutions across India.
+          </p>
+          <div style="display:flex; gap:0.75rem; font-size:1.1rem;">
+            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">COMPANY</h4>
+          <div class="footer-links-list">
+            <a href="about.html">About Us</a>
+            <a href="about.html">Careers</a>
+            <a href="partners.html">Partner With Us</a>
+            <a href="about.html">News &amp; Media</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">SERVICES</h4>
+          <div class="footer-links-list">
+            <a href="express-delivery.html">Express Delivery</a>
+            <a href="domestic-delivery.html">Domestic Delivery</a>
+            <a href="surface-delivery.html">Surface Cargo</a>
+            <a href="air-delivery.html">Air Cargo Delivery</a>
+            <a href="ecommerce-delivery.html">E-Commerce Fulfillment</a>
+            <a href="b2b-delivery.html">B2B Delivery</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">SUPPORT</h4>
+          <div class="footer-links-list">
+            <a href="tracking.html">Track Shipment</a>
+            <a href="rate-calculator.html">Rate Calculator</a>
+            <a href="faq.html">FAQ</a>
+            <a href="how-it-works.html">Shipping Guide</a>
+            <a href="faq.html">Terms &amp; Conditions</a>
+            <a href="faq.html">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">CONTACT INFO</h4>
+          <div class="footer-links-list" style="font-size:0.85rem; line-height:1.6;">
+            <div><i class="fas fa-map-marker-alt" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> 155/C, Mahatma Gandhi Road, 1st Floor, Kolkata, West Bengal, 700007, India</div>
+            <div><i class="fas fa-phone-alt" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> +91 33 22737905 / +91 033 32573999</div>
+            <div><i class="fas fa-envelope" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> smandelia@secureexp.com</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1.75rem; text-align:center; font-size:0.85rem;">
+        &copy; 2026 Secure Express India Pvt Ltd. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tracking.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>
