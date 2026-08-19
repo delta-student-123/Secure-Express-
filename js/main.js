@@ -55,6 +55,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Scroll Reveal Intersection Observer
+  const revealElements = document.querySelectorAll('.reveal-on-scroll, .section-header, .service-card-clean, .partner-advantage-card, .why-card-v, .contact-card, .strength-metric-card, .vertical-pill');
+  if ('IntersectionObserver' in window && revealElements.length > 0) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => {
+      if (!el.classList.contains('reveal-on-scroll')) {
+        el.classList.add('reveal-on-scroll');
+      }
+      observer.observe(el);
+    });
+  } else {
+    revealElements.forEach(el => el.classList.add('in-view'));
+  }
+
 });
 
 // Global Toast Notification Helper

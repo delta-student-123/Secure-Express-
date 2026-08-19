@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Calculator | SECURE EXPRESS INDIA PVT LTD - Freight Estimation</title>
+  <meta name="description" content="Calculate shipping rates and freight cost instantly with Secure Express India Pvt Ltd. Compare Express Air, Air Cargo, Surface, and B2B delivery charges across India.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .page-banner {
+      background: radial-gradient(circle at center, rgba(3, 15, 38, 0.72) 0%, rgba(3, 15, 38, 0.45) 55%, rgba(3, 15, 38, 0.15) 100%), url('images/services_breadcrumbs_bg.jpg') center center / cover no-repeat;
+      color: #FFFFFF;
+      padding: 4.5rem 0 5.5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-banner::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-cyan), var(--primary-blue), var(--accent-orange));
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-flex">
+        <div class="top-info">
+          <span><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</span>
+          <span><a href="tel:+913322737905" style="color:inherit; text-decoration:none;"><i class="fas fa-phone-alt fa-phone"></i> +91 33 22737905 / +91 033 32573999</a></span>
+          <span><a href="mailto:smandelia@secureexp.com" style="color:inherit; text-decoration:none;"><i class="fas fa-envelope"></i> smandelia@secureexp.com</a></span>
+        </div>
+        <div class="top-links">
+          <a href="tracking.html"><i class="fas fa-search-location"></i> Track Consignment</a>
+          <a href="contact.html"><i class="fas fa-headset"></i> Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navbar -->
+  <header class="navbar" id="mainHeader">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-logo">
+        <img src="images/logo/logo.png" alt="SECURE EXPRESS INDIA PVT LTD" style="height:75px;">
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        
+        <div class="nav-item">
+          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+          <div class="dropdown-menu">
+            <a href="express-delivery.html" class="dropdown-item">Express Delivery</a>
+            <a href="domestic-delivery.html" class="dropdown-item">Domestic Courier</a>
+            <a href="surface-delivery.html" class="dropdown-item">Surface Cargo</a>
+            <a href="air-delivery.html" class="dropdown-item">Air Cargo Delivery</a>
+            <a href="ecommerce-delivery.html" class="dropdown-item">E-Commerce Fulfillment</a>
+            <a href="b2b-delivery.html" class="dropdown-item">B2B Delivery</a>
+          </div>
+        </div>
+
+        <a href="tracking.html" class="nav-link">Track</a>
+        <a href="rate-calculator.html" class="nav-link active">Rate Calculator</a>
+        <a href="partner.html" class="nav-link">Partner With Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <a href="contact.html" class="btn btn-accent"><i class="fas fa-box-open"></i> Book Now <i class="fas fa-arrow-right" style="font-size:0.8rem;"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="breadcrumb-row-center">
+        <a href="index.html" class="breadcrumb-item"><i class="fas fa-home"></i> Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-item active">Rate Calculator</span>
+        <span class="breadcrumb-sep">/</span>
+        <div class="breadcrumb-badge"><i class="fas fa-calculator"></i> INSTANT FREIGHT ESTIMATOR</div>
+      </div>
+      
+      <h1 style="font-family:var(--font-heading); font-size:2.65rem; font-weight:900; color:#FFF; margin-bottom:0.6rem; line-height:1.25; letter-spacing: -0.3px;">
+        Freight Rate <span style="color:var(--primary-cyan);">Calculator</span>
+      </h1>
+      
+      <p style="font-size:1.02rem; color:rgba(255,255,255,0.85); max-width:680px; margin:0 auto; line-height:1.55;">
+        Calculate instant shipping costs, fuel surcharges, and estimated delivery charges for your packages across India.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rate Calculator Main Section -->
+  <section class="section" style="background:var(--bg-light); padding-top:0; padding-bottom:4rem;">
+    <div class="container">
+      <div class="calculator-card-container">
+        
+        <div class="calc-grid-layout">
+          
+          <!-- Input Form Column -->
+          <div>
+            <h3 style="font-family:var(--font-heading); font-size:1.35rem; font-weight:800; color:var(--navy-deep); margin-bottom:1.25rem; display:flex; align-items:center; gap:0.5rem;">
+              <i class="fas fa-sliders-h" style="color:var(--primary-blue);"></i> Enter Shipment Details
+            </h3>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="calc-form-group">
+                <label for="calcOrigin">Origin Pincode / City *</label>
+                <input type="text" id="calcOrigin" class="calc-form-control" placeholder="e.g. 400001 (Mumbai)" value="400001">
+              </div>
+
+              <div class="calc-form-group">
+                <label for="calcDest">Destination Pincode / City *</label>
+                <input type="text" id="calcDest" class="calc-form-control" placeholder="e.g. 110001 (Delhi)" value="110001">
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="calc-form-group">
+                <label for="calcWeight">Gross Weight (Kg) *</label>
+                <input type="number" id="calcWeight" class="calc-form-control" placeholder="e.g. 5.0" value="2.5" min="0.1" step="0.1">
+              </div>
+
+              <div class="calc-form-group">
+                <label for="calcMode">Transport Service Mode *</label>
+                <select id="calcMode" class="calc-form-control" style="cursor:pointer;">
+                  <option value="express" selected>Time-Definite Express Courier</option>
+                  <option value="air">Air Cargo Freight</option>
+                  <option value="surface">Domestic Surface Cargo</option>
+                  <option value="ecommerce">E-Commerce Delivery</option>
+                  <option value="b2b">B2B Heavy Cargo</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Optional Dimensions -->
+            <div style="margin-top:1rem; padding:1.25rem; background:#F8FAFC; border-radius:var(--radius); border:1px solid var(--border-light);">
+              <div style="font-size:0.85rem; font-weight:700; color:var(--navy-deep); margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem;">
+                <i class="fas fa-ruler-combined" style="color:var(--primary-blue);"></i> Volumetric Dimensions (Optional - L x W x H in cm)
+              </div>
+              <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:0.75rem;">
+                <input type="number" id="dimL" class="calc-form-control" placeholder="L (cm)">
+                <input type="number" id="dimW" class="calc-form-control" placeholder="W (cm)">
+                <input type="number" id="dimH" class="calc-form-control" placeholder="H (cm)">
+              </div>
+            </div>
+
+            <button type="button" id="calcBtn" class="btn btn-primary" style="width:100%; margin-top:1.5rem; justify-content:center; font-size:1rem; padding:0.9rem;">
+              <i class="fas fa-calculator" style="margin-right:0.4rem;"></i> Calculate Estimated Freight
+            </button>
+          </div>
+
+          <!-- Live Output Summary Column -->
+          <div>
+            <div class="rate-summary-box">
+              <h4 style="font-family:var(--font-heading); font-size:1.2rem; font-weight:800; color:#FFF; margin-bottom:1.25rem; display:flex; align-items:center; gap:0.5rem;">
+                <i class="fas fa-file-invoice-dollar" style="color:var(--primary-cyan);"></i> Cost Breakdown
+              </h4>
+
+              <div class="rate-row">
+                <span>Base Freight Charge:</span>
+                <strong id="resBaseFreight" style="color:#FFF;">₹163</strong>
+              </div>
+
+              <div class="rate-row">
+                <span>Fuel Surcharge (12%):</span>
+                <strong id="resFuelSurcharge" style="color:#FFF;">₹20</strong>
+              </div>
+
+              <div class="rate-row">
+                <span>GST (18%):</span>
+                <strong id="resGst" style="color:#FFF;">₹33 (18%)</strong>
+              </div>
+
+              <div class="rate-row grand-total">
+                <span style="font-size:1rem; font-weight:700; color:#FFF;">Estimated Total:</span>
+                <div id="resGrandTotal" class="grand-total-val">₹216</div>
+              </div>
+
+              <div style="margin-top:1.5rem; font-size:0.75rem; color:rgba(255,255,255,0.7); line-height:1.5; border-top:1px solid rgba(255,255,255,0.1); padding-top:1rem;">
+                <i class="fas fa-info-circle"></i> Rates are indicative estimates based on standard tariffs. Final billing is subject to actual weight &amp; volumetric verification at pickup.
+              </div>
+
+              <a href="contact.html" class="btn btn-accent" style="width:100%; justify-content:center; margin-top:1.25rem;">
+                <i class="fas fa-box-open"></i> Book Shipment Now
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Rate Advantages -->
+  <section class="section" style="background:#FFFFFF; padding:3rem 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem;">
+        
+        <div style="padding:1.5rem; border:1px solid var(--border-light); border-radius:var(--radius-lg); background:#F8FAFC;">
+          <div style="font-size:1.8rem; color:var(--primary-blue); margin-bottom:0.6rem;"><i class="fas fa-tag"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.35rem;">Transparent Pricing</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Zero hidden charges with itemized fuel surcharge and GST breakdowns.</p>
+        </div>
+
+        <div style="padding:1.5rem; border:1px solid var(--border-light); border-radius:var(--radius-lg); background:#F8FAFC;">
+          <div style="font-size:1.8rem; color:var(--primary-blue); margin-bottom:0.6rem;"><i class="fas fa-boxes"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.35rem;">Bulk Volume Discounts</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Special discounted commercial slabs for B2B cargo and corporate accounts.</p>
+        </div>
+
+        <div style="padding:1.5rem; border:1px solid var(--border-light); border-radius:var(--radius-lg); background:#F8FAFC;">
+          <div style="font-size:1.8rem; color:var(--primary-blue); margin-bottom:0.6rem;"><i class="fas fa-headset"></i></div>
+          <h4 style="font-family:var(--font-heading); font-size:1.1rem; font-weight:800; color:var(--navy-deep); margin-bottom:0.35rem;">Custom Quotations</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Contact our desk for customized air cargo charters and warehousing packages.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" style="background:var(--navy-deep); color:#FFF; padding:3.5rem 0 1.5rem 0;">
+    <div class="container">
+      <div class="footer-grid" style="display:grid; grid-template-columns:1.2fr 0.8fr 0.8fr 1.2fr; gap:2.5rem; margin-bottom:2.5rem;">
+        
+        <div>
+          <img src="images/logo/logo.png" alt="SECURE EXPRESS INDIA PVT LTD" style="height:65px; background:#FFF; padding:0.4rem 0.8rem; border-radius:8px; margin-bottom:1rem;">
+          <p style="font-size:0.85rem; color:rgba(255,255,255,0.75); line-height:1.6;">
+            Leading Courier &amp; Air Logistics Service Company in India serving 588+ centers and 4,182+ outlets nationwide.
+          </p>
+          <div style="margin-top:0.75rem; font-size:0.85rem; font-weight:700; color:var(--primary-cyan);">
+            Objective: "SECURE &amp; BE ASSURED"
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">QUICK LINKS</h4>
+          <div class="footer-links-list">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="tracking.html">Track Consignment</a>
+            <a href="rate-calculator.html">Rate Calculator</a>
+            <a href="partner.html">Partner With Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">SERVICES</h4>
+          <div class="footer-links-list">
+            <a href="express-delivery.html">Express Delivery</a>
+            <a href="domestic-delivery.html">Domestic Courier</a>
+            <a href="surface-delivery.html">Surface Cargo</a>
+            <a href="air-delivery.html">Air Cargo Delivery</a>
+            <a href="ecommerce-delivery.html">E-Commerce Fulfillment</a>
+            <a href="b2b-delivery.html">B2B Delivery</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">CONTACT INFO</h4>
+          <div class="footer-links-list" style="font-size:0.85rem; line-height:1.6;">
+            <div><i class="fas fa-map-marker-alt" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> 155/C, Mahatma Gandhi Road, 1st Floor, Kolkata, West Bengal, 700007, India</div>
+            <div><a href="tel:+913322737905" style="color:inherit; text-decoration:none;"><i class="fas fa-phone-alt fa-phone" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> +91 33 22737905 / +91 033 32573999</a></div>
+            <div><a href="mailto:smandelia@secureexp.com" style="color:inherit; text-decoration:none;"><i class="fas fa-envelope" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> smandelia@secureexp.com</a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:1.75rem; text-align:center; font-size:0.85rem; color:rgba(255,255,255,0.7);">
+        &copy; 2026 Secure Express India Pvt Ltd. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+</body>
+</html>

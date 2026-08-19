@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
@@ -23,12 +23,12 @@
   <div class="top-bar">
     <div class="container top-bar-content">
       <div class="top-info">
-        <div class="top-info-item"><i class="fas fa-phone-alt"></i> <span>+91 33 22737905 / +91 033 32573999</span></div>
-        <div class="top-info-item"><i class="fas fa-envelope"></i> <span>smandelia@secureexp.com</span></div>
-        <div class="top-info-item"><i class="fas fa-clock"></i> <span>Mon - Sat: 9:00 AM - 7:00 PM</span></div>
+        <div class="top-info-item"><a href="tel:+913322737905" style="color:inherit; text-decoration:none;"><i class="fas fa-phone-alt fa-phone"></i> <span>+91 33 22737905 / +91 033 32573999</span></a></div>
+        <div class="top-info-item"><a href="mailto:smandelia@secureexp.com" style="color:inherit; text-decoration:none;"><i class="fas fa-envelope"></i> <span>smandelia@secureexp.com</span></a></div>
+        <div class="top-info-item"><i class="fas fa-clock"></i> <span>Mon - Sat: 9:00 AM - 8:00 PM</span></div>
       </div>
       <div class="top-links">
-        <a href="#track"><i class="fas fa-search-location"></i> Track Shipment</a>
+        <a href="tracking.html"><i class="fas fa-search-location"></i> Track Shipment</a>
         <a href="about.html"><i class="fas fa-user-tie"></i> Careers</a>
         <a href="contact.html"><i class="fas fa-headset"></i> Support</a>
       </div>
@@ -58,9 +58,9 @@
           </div>
         </div>
 
-        <a href="#track" class="nav-link">Track</a>
-        <a href="#calculator" class="nav-link">Rate Calculator</a>
-        <a href="partners.html" class="nav-link">Partner With Us</a>
+        <a href="tracking.html" class="nav-link">Track</a>
+        <a href="rate-calculator.html" class="nav-link">Rate Calculator</a>
+        <a href="partner.html" class="nav-link">Partner With Us</a>
         <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
 
@@ -87,8 +87,8 @@
           </p>
 
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="#track" class="btn btn-primary"><i class="fas fa-location-arrow"></i> Track Your Shipment <i class="fas fa-arrow-right"></i></a>
-            <a href="#calculator" class="btn btn-outline"><i class="fas fa-calculator"></i> Calculate Rate <i class="fas fa-arrow-right"></i></a>
+            <a href="tracking.html" class="btn btn-primary"><i class="fas fa-location-arrow"></i> Track Your Shipment <i class="fas fa-arrow-right"></i></a>
+            <a href="rate-calculator.html" class="btn btn-outline"><i class="fas fa-calculator"></i> Calculate Rate <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
 
@@ -134,7 +134,7 @@
             <div class="t-step"><i class="fas fa-file-alt"></i><span>Booked</span></div>
             <div class="t-step"><i class="fas fa-truck"></i><span>In Transit</span></div>
             <div class="t-step"><i class="fas fa-shipping-fast"></i><span>Out For Delivery</span></div>
-            <div class="t-step"><i class="fas fa-box-check"></i><span>Delivered</span></div>
+            <div class="t-step"><i class="fas fa-check-circle"></i><span>Delivered</span></div>
           </div>
         </div>
 
@@ -345,7 +345,7 @@
 
         <div class="how-step-card">
           <div class="how-step-num">5</div>
-          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-box-check"></i></div>
+          <div style="font-size:2rem; color:var(--primary-blue); margin-bottom:0.75rem;"><i class="fas fa-check-circle"></i></div>
           <h4 style="font-family:var(--font-heading); font-size:1.05rem; font-weight:800; margin-bottom:0.35rem; color:var(--navy-deep);">Delivered</h4>
           <p style="font-size:0.82rem; color:var(--text-muted);">Safe and on-time delivery to your doorstep.</p>
         </div>
@@ -559,11 +559,12 @@
           <p style="font-size:0.88rem; line-height:1.7; margin-bottom:1.5rem;">
             Secure Express India Pvt Ltd is a leading courier &amp; logistics company providing reliable, secure and fast delivery solutions across India.
           </p>
-          <div style="display:flex; gap:0.75rem; font-size:1.1rem;">
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center;"><i class="fab fa-instagram"></i></a>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
 
@@ -606,8 +607,8 @@
           <h4 class="footer-col-title">CONTACT INFO</h4>
           <div class="footer-links-list" style="font-size:0.85rem; line-height:1.6;">
             <div><i class="fas fa-map-marker-alt" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> 155/C, Mahatma Gandhi Road, 1st Floor, Kolkata, West Bengal, 700007, India</div>
-            <div><i class="fas fa-phone-alt" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> +91 33 22737905 / +91 033 32573999</div>
-            <div><i class="fas fa-envelope" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> smandelia@secureexp.com</div>
+            <div><a href="tel:+913322737905" style="color:inherit; text-decoration:none;"><i class="fas fa-phone-alt fa-phone" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> +91 33 22737905 / +91 033 32573999</a></div>
+            <div><a href="mailto:smandelia@secureexp.com" style="color:inherit; text-decoration:none;"><i class="fas fa-envelope" style="color:var(--primary-cyan); margin-right:0.4rem;"></i> smandelia@secureexp.com</a></div>
           </div>
         </div>
       </div>

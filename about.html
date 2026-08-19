@@ -6,18 +6,20 @@
   <title>About Us | SECURE EXPRESS INDIA PVT LTD - Courier & Air Logistics Services</title>
   <meta name="description" content="Learn about Secure Express India Pvt Ltd, a leading Courier & Air Logistics company serving India and abroad with 588+ centers and 4,182+ outlets. Objective: SECURE & BE ASSURED.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-resources/1.0.0/css/font-resources.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
   <style>
     .page-banner {
-      background: linear-gradient(135deg, #050D1A 0%, var(--navy-deep) 60%, #082142 100%);
+      background: linear-gradient(90deg, #05132B 0%, #05132B 38%, rgba(5, 19, 43, 0.85) 52%, rgba(5, 19, 43, 0.15) 75%), url('images/about_breadcrumbs_bg.jpg') center right / cover no-repeat;
       color: #FFFFFF;
-      padding: 3.5rem 0 3rem 0;
+      padding: 4.5rem 0 4rem 0;
       position: relative;
       overflow: hidden;
+      text-align: left;
     }
     .page-banner::after {
       content: '';
@@ -27,6 +29,47 @@
       right: 0;
       height: 4px;
       background: linear-gradient(90deg, var(--primary-cyan), var(--primary-blue), var(--accent-orange));
+    }
+    .breadcrumb-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 0.85rem;
+      font-size: 0.88rem;
+    }
+    .breadcrumb-item {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: var(--transition);
+    }
+    .breadcrumb-item:hover {
+      color: var(--primary-cyan);
+    }
+    .breadcrumb-item.active {
+      color: var(--primary-cyan);
+      font-weight: 700;
+    }
+    .breadcrumb-sep {
+      color: rgba(255, 255, 255, 0.35);
+    }
+    .breadcrumb-badge {
+      background: rgba(0, 168, 240, 0.18);
+      color: var(--primary-cyan);
+      border: 1px solid rgba(0, 168, 240, 0.35);
+      padding: 0.25rem 0.85rem;
+      border-radius: 50px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      letter-spacing: 0.5px;
+      backdrop-filter: blur(4px);
     }
     .about-lead-box {
       background: linear-gradient(135deg, #F4F8FC 0%, #E6EFF8 100%);
@@ -93,11 +136,11 @@
       <div class="top-bar-flex">
         <div class="top-info">
           <span><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</span>
-          <span><i class="fas fa-phone-alt"></i> +91 33 22737905 / +91 033 32573999</span>
-          <span><i class="fas fa-envelope"></i> smandelia@secureexp.com</span>
+          <span><a href="tel:+913322737905" style="color:inherit; text-decoration:none;"><i class="fas fa-phone-alt fa-phone"></i> +91 33 22737905 / +91 033 32573999</a></span>
+          <span><a href="mailto:smandelia@secureexp.com" style="color:inherit; text-decoration:none;"><i class="fas fa-envelope"></i> smandelia@secureexp.com</a></span>
         </div>
         <div class="top-links">
-          <a href="index.html#track"><i class="fas fa-search-location"></i> Track Consignment</a>
+          <a href="tracking.html"><i class="fas fa-search-location"></i> Track Consignment</a>
           <a href="contact.html"><i class="fas fa-headset"></i> Support</a>
         </div>
       </div>
@@ -127,9 +170,9 @@
           </div>
         </div>
 
-        <a href="index.html#track" class="nav-link">Track</a>
-        <a href="index.html#calculator" class="nav-link">Rate Calculator</a>
-        <a href="contact.html" class="nav-link">Partner With Us</a>
+        <a href="tracking.html" class="nav-link">Track</a>
+        <a href="rate-calculator.html" class="nav-link">Rate Calculator</a>
+        <a href="partner.html" class="nav-link">Partner With Us</a>
         <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
 
@@ -142,21 +185,21 @@
   <!-- ==========================================================================
        PAGE HERO BANNER
        ========================================================================== -->
-  <section class="page-banner" style="padding: 2.25rem 0 2rem 0; text-align: center;">
+  <section class="page-banner">
     <div class="container">
-      <div class="breadcrumb" style="justify-content: center; margin-bottom: 0.75rem; font-size: 0.85rem;">
-        <a href="index.html" style="color: rgba(255,255,255,0.7);"><i class="fas fa-home"></i> Home</a>
-        <span style="color: rgba(255,255,255,0.4);">/</span>
-        <span style="color: var(--primary-cyan); font-weight: 700;">About Us</span>
+      <div class="breadcrumb-row">
+        <a href="index.html" class="breadcrumb-item"><i class="fas fa-home"></i> Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-item active">About Us</span>
+        <span class="breadcrumb-sep">/</span>
+        <div class="breadcrumb-badge"><i class="fas fa-shield-alt"></i> SECURE &amp; BE ASSURED</div>
       </div>
-
-      <div class="sub-badge" style="background:rgba(0,168,240,0.15); color:var(--primary-cyan); border-color:rgba(0,168,240,0.3); margin-bottom:0.6rem; display:inline-flex; padding:0.25rem 0.85rem; font-size:0.72rem;"><i class="fas fa-shield-alt"></i> SECURE &amp; BE ASSURED</div>
       
-      <h1 style="font-family:var(--font-heading); font-size:2.25rem; font-weight:900; color:#FFF; margin-bottom:0.5rem; line-height:1.25;">
+      <h1 style="font-family:var(--font-heading); font-size:2.65rem; font-weight:900; color:#FFF; margin-bottom:0.6rem; line-height:1.25; letter-spacing: -0.3px;">
         About <span style="color:var(--primary-cyan);">Secure Express</span> India Pvt Ltd
       </h1>
       
-      <p style="font-size:0.98rem; color:rgba(255,255,255,0.85); max-width:640px; margin:0 auto; line-height:1.5;">
+      <p style="font-size:1.02rem; color:rgba(255,255,255,0.85); max-width:640px; margin:0; line-height:1.55;">
         Giving customers a unique experience of business relationship through reliability, speed, and excellence across India.
       </p>
     </div>
@@ -450,11 +493,12 @@
           <p style="font-size:0.88rem; line-height:1.7; margin-bottom:1.5rem;">
             Secure Express India Pvt Ltd is a leading courier &amp; logistics company providing reliable, secure and fast delivery solutions across India.
           </p>
-          <div style="display:flex; gap:0.75rem;">
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#FFF;"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#FFF;"><i class="fab fa-twitter"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#FFF;"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" style="width:36px; height:36px; background:rgba(255,255,255,0.1); border-radius:50%; display:flex; align-items:center; justify-content:center; color:#FFF;"><i class="fab fa-instagram"></i></a>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
 
